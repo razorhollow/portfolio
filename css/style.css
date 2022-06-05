@@ -43,9 +43,18 @@ body {
 #landing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+  border: 1px solid red;
+  padding: 5vh;
+}
+
+#landing > p, h1, h3 {
+  width: 36%;
+  border: 1px solid red;
+  padding: 1vh 0;
+  margin-right: 1vw;
 }
 
 #landing > p {
-  width: 30%;
+  text-align: justify;
 }
