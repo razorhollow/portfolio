@@ -1,14 +1,47 @@
 /*-------------------------------- Constants --------------------------------*/
-
+import {getRandomInterest} from "./interests.js"
 /*-------------------------------- Variables --------------------------------*/
+let interests = []
 
 /*------------------------ Cached Element References ------------------------*/
+
+let myLikes = document.querySelector('#icon-section')
 
 /*----------------------------- Event Listeners -----------------------------*/
 
 /*-------------------------------- Functions --------------------------------*/
 
+function render () {
+
+}
+
+function getLikes () {
+  while(interests.length < 3) {
+    let pulledInterest = getRandomInterest()
+    if (! interests.some(interest => interest.title === pulledInterest.title)) {
+      interests.push(pulledInterest)
+    }
+  }
+}
+
+function renderLikes() {
+  getLikes()
+  interests.forEach(function(interest) {
+    let interestCard = document.createElement('div')
+    interestCard.classList.add('w-25')
+    interestCard.innerHTML=
+    `<div class="card">
+      <div class="card-body">
+        ${interest.icon}<p>${interest.title}</p>
+    </div>
+  </div>`
+    myLikes.append(interestCard)
+  })
+}
+
+renderLikes()
+
+
 /*---------------------------------- TODO -----------------------------------*/
 
 // change text color of active nav item
-// create object js file with portfolio info (screenshot, url, title, description)

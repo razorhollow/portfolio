@@ -15,7 +15,7 @@ const interests = [
     icon: '<i class="fa-regular fa-bow-arrow fa-4x"></i>'
   },
   {
-    title: "Drone Photography/Videography",
+    title: "Drone Photography",
     icon: '<i class="fa-regular fa-drone-front fa-4x"></i>'
   },
   {
@@ -32,3 +32,9 @@ const interests = [
   }
 
 ]
+
+function getRandomInterest() {
+  return interests[Math.floor(Math.random() * interests.length)]
+}
+
+export {getRandomInterest}
