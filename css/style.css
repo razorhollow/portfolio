@@ -37,8 +37,10 @@ body {
   margin: 0;
 }
 
+
+
 button {
-  width: 45%;
+  min-width: 45%;
   margin: 0;
 }
 
@@ -78,7 +80,7 @@ button {
   justify-content: center;
   align-items: flex-end;
   flex-wrap: wrap;
-  height: 60%;
+  min-height: 70vh;
   
   padding: 5vh;
 }
@@ -105,4 +107,42 @@ button {
 .active {
   border-bottom: 1px solid var(--united-nations-blue);
   color: var(--united-nations-blue);
+}
+
+
+
+#icon-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2em 0;
+}
+
+#icon-section > h4 {
+  margin: 0 2em;
+  padding: 1em;
+  font-size: .7em;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10vh;
+}
+
+#about > img {
+  width: 30%;
+  height: 30%;
+  transform: scaleX(-1);
+  align-self: center;
+}
+
+.text-box {
+  min-width: 300px;
+  max-width: 50%;
+}
+
+.text-box > h3 {
+  text-align: center;
 }
