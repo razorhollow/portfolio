@@ -48,6 +48,26 @@ button {
   justify-content: space-between;
   
 }
+
+#contact-btn {
+  background-color: var(--united-nations-blue);
+  border-color: var(--united-nations-blue);
+}
+
+#contact-btn:hover {
+  background-color: var(--dark-cornflower-blue);
+}
+
+#work-btn {
+  color: var(--united-nations-blue);
+  border-color: var(--united-nations-blue);
+}
+
+#work-btn:hover {
+  background-color: var(--dark-cornflower-blue);
+  color: white;
+}
+
 .accent-color {
   color: var(--united-nations-blue);
 }
