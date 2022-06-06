@@ -74,18 +74,35 @@ button {
 
 #landing {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  height: 60%;
   
   padding: 5vh;
 }
 
-.section > p, h1, h3 {
+.left-column {
   width: 50%;
-  
-  margin-right: 1vw;
+}
+
+#landing > img {
+  height: 25%;
+  width: 25%;
 }
 
 .section landing > p {
   text-align: justify;
+}
+
+.navbar-nav {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.active {
+  border-bottom: 1px solid var(--united-nations-blue);
+  color: var(--united-nations-blue);
 }

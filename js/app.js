@@ -7,3 +7,8 @@
 /*----------------------------- Event Listeners -----------------------------*/
 
 /*-------------------------------- Functions --------------------------------*/
+
+/*---------------------------------- TODO -----------------------------------*/
+
+// change text color of active nav item
+// create object js file with portfolio info (screenshot, url, title, description)
