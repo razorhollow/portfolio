@@ -45,8 +45,29 @@ const interests = [
 
 ]
 
+const educationCards = [
+  {
+    title: "General Assembly",
+    description: "Software Engineering Immersive",
+    dates: "May - August, 2022",
+    logo: './assets/ga-logo'
+  },
+  {
+    title: "Keuka College",
+    description: "Organizational Management",
+    dates: "2011 - 2013",
+    logo: './assets/keuka.png'
+  },
+  {
+    title: "Airline Transport Professionals",
+    description: "Professional Pilot Program | CFI, CFII, MEI",
+    dates: "2004",
+    logo: './assets/atp.jpeg'
+  },
+]
+
 function getRandomInterest() {
   return interests[Math.floor(Math.random() * interests.length)]
 }
 
-export {getRandomInterest}
+export {getRandomInterest, educationCards}

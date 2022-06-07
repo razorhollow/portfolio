@@ -1,5 +1,5 @@
 /*-------------------------------- Constants --------------------------------*/
-import {getRandomInterest} from "./interests.js"
+import {getRandomInterest, educationCards} from "./interests.js"
 /*-------------------------------- Variables --------------------------------*/
 let interests = []
 
@@ -7,6 +7,7 @@ let interests = []
 
 let myLikes = document.querySelector('#icon-section')
 let randomize = document.querySelector('#randomize')
+let educationSection = document.querySelector('#education')
 
 /*----------------------------- Event Listeners -----------------------------*/
 randomize.addEventListener('click', function(evt){
@@ -45,8 +46,23 @@ function renderLikes() {
   })
 }
 
-renderLikes()
+function renderEducation() {
+  educationCards.forEach(function(card) {
+    let currentCard = document.createElement('div')
+    currentCard.classList.add('education-card')
+    currentCard.innerHTML = 
+    `
+    <img src="${card.logo}" alt="" class="education-logo">
+    <h5 class="education-heading">${card.title}</h5>
+    <h6 class="education-desk">${card.description}</h6>
+    <p class="education-date">${card.dates}</p>
+    `
+    educationSection.append(currentCard)
+  })
+}
 
+renderLikes()
+renderEducation()
 
 /*---------------------------------- TODO -----------------------------------*/
 
