@@ -88,21 +88,23 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   flex-wrap: wrap;
-  min-height: 70vh;
-  
+  min-height: 60vh;
+  max-height: 50px;
   padding: 5vh;
+}
+
+#landing > img {
+  width: 12%;
+  height: 12%;
 }
 
 .left-column {
   width: 50%;
 }
 
-#landing > img {
-  height: 10%;
-  width: 10%;
-}
+
 
 .section landing > p {
   text-align: justify;
@@ -163,6 +165,12 @@ button {
   text-align: center;
 }
 
+.text-box > h2 {
+  font-size: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
 .card {
   border: none;
   min-width: 130px;
@@ -172,8 +180,7 @@ button {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  margin-top: 5em;
-  border-bottom: 5px solid var(--dark-cornflower-blue)
+  border-bottom: 5px solid var(--dark-cornflower-blue);
 }
 
 #badge-container > i {
@@ -193,16 +200,27 @@ i:hover {
   margin-top: 4em;
 }
 
-#resume > 
-
 #resume > * {
   min-width: 400px;
   margin: 0 auto;
 }
 
+#resume > h2 {
+  margin-bottom: 1em;
+  font-size: 3em;
+}
+
 .resume-heading {
   font-size: 2em;
   margin-bottom: 2em;
+}
+
+#education {
+  margin-top: 2em;
+}
+
+#work-history {
+  margin-top: 2em;
 }
 
 .education-card {
