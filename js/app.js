@@ -18,10 +18,6 @@ randomize.addEventListener('click', function(evt){
 })
 /*-------------------------------- Functions --------------------------------*/
 
-function render () {
-
-}
-
 function getLikes () {
   while(interests.length < 3) {
     let pulledInterest = getRandomInterest()

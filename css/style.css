@@ -200,6 +200,7 @@ i:hover {
   margin-top: 4em;
 }
 
+
 #resume > * {
   min-width: 400px;
   margin: 0 auto;
@@ -254,4 +255,8 @@ i:hover {
 
 .education-card > * {
   margin: .1em;
+}
+
+#colgan {
+  width: 40px;
 }
