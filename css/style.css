@@ -100,8 +100,8 @@ button {
 }
 
 #landing > img {
-  height: 20%;
-  width: 20%;
+  height: 10%;
+  width: 10%;
 }
 
 .section landing > p {
@@ -178,6 +178,12 @@ button {
 
 #badge-container > i {
   padding: 20px;
+}
+
+
+
+i:hover {
+  transform: translateY(-5px);
 }
 
 #resume {
