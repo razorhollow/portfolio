@@ -37,6 +37,10 @@ const interests = [
   {
     title: "Cooking",
     icon: '<i class="fa-regular fa-knife-kitchen fa-4x"></i>'
+  },
+  {
+    title: "Coffee!!!",
+    icon: '<i class="fa-solid fa-coffee-beans"></i>'
   }
 
 ]
