@@ -29,6 +29,14 @@ const interests = [
   {
     title: "Wood-Fired Pizza",
     icon: '<i class="fa-regular fa-pizza-slice fa-4x"></i>'
+  },
+  {
+    title: "Videography",
+    icon: '<i class="fa-regular fa-camera-movie"></i>"></i>'
+  },
+  {
+    title: "Cooking",
+    icon: '<i class="fa-regular fa-knife-kitchen"></i>'
   }
 
 ]
