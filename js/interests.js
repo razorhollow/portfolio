@@ -32,11 +32,11 @@ const interests = [
   },
   {
     title: "Videography",
-    icon: '<i class="fa-regular fa-camera-movie"></i>"></i>'
+    icon: '<i class="fa-regular fa-camera-movie fa-4x"></i>"></i>'
   },
   {
     title: "Cooking",
-    icon: '<i class="fa-regular fa-knife-kitchen"></i>'
+    icon: '<i class="fa-regular fa-knife-kitchen fa-4x"></i>'
   }
 
 ]

@@ -6,9 +6,15 @@ let interests = []
 /*------------------------ Cached Element References ------------------------*/
 
 let myLikes = document.querySelector('#icon-section')
+let randomize = document.querySelector('#randomize')
 
 /*----------------------------- Event Listeners -----------------------------*/
+randomize.addEventListener('click', function(evt){
+  myLikes.innerHTML = ""
+  interests = []
+  renderLikes()
 
+})
 /*-------------------------------- Functions --------------------------------*/
 
 function render () {

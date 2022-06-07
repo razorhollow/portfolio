@@ -143,6 +143,11 @@ button {
   align-self: center;
 }
 
+#randomize:hover {
+  color: var(--dark-cornflower-blue);
+  cursor: pointer;
+}
+
 .text-box {
   min-width: 300px;
   max-width: 50%;
