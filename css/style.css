@@ -303,5 +303,9 @@ i:hover {
 }
 
 #social > i:hover {
-  color: var(--united-nations-blue;
+  color: var(--united-nations-blue);
+}
+
+@media only screen and (max-width: 1199px)  {
+  
 }
