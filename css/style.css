@@ -274,6 +274,10 @@ i:hover {
   margin: 10vh auto;
 }
 
+#my-work > h2 {
+  padding-bottom: 1em;
+}
+
 #social > i {
   color: var(--dark-cornflower-blue);
   cursor: pointer;
@@ -299,5 +303,5 @@ i:hover {
 }
 
 #social > i:hover {
-  color: var(--united-nations-blue);
+  color: var(--united-nations-blue;
 }

@@ -10,6 +10,8 @@ let myLikes = document.querySelector('#icon-section')
 let randomize = document.querySelector('#randomize')
 let educationSection = document.querySelector('#education')
 let workSection = document.querySelector('#my-work')
+let contactBtn = document.querySelector('#contact-btn')
+let workBtn = document.querySelector('#work-btn')
 
 /*----------------------------- Event Listeners -----------------------------*/
 randomize.addEventListener('click', function(evt){
@@ -17,6 +19,13 @@ randomize.addEventListener('click', function(evt){
   interests = []
   renderLikes()
 
+})
+
+contactBtn.addEventListener('click', function(){
+  window.scrollTo(0, 4000)
+})
+workBtn.addEventListener('click', function(){
+  window.scrollTo(0, 2300)
 })
 /*-------------------------------- Functions --------------------------------*/
 
@@ -60,6 +69,9 @@ function renderEducation() {
 }
 
 function renderWork() {
+  let heading = document.createElement('h2')
+  heading.textContent = 'My Previous Work'
+  workSection.append(heading)
   work.forEach(function(example) {
     let currentExample = document.createElement('div')
     currentExample.classList.add('card' , 'text-center')
