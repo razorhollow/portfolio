@@ -1,5 +1,6 @@
 /*-------------------------------- Constants --------------------------------*/
 import {getRandomInterest, educationCards} from "./interests.js"
+import {work} from "./work.js"
 /*-------------------------------- Variables --------------------------------*/
 let interests = []
 
@@ -8,6 +9,7 @@ let interests = []
 let myLikes = document.querySelector('#icon-section')
 let randomize = document.querySelector('#randomize')
 let educationSection = document.querySelector('#education')
+let workSection = document.querySelector('#my-work')
 
 /*----------------------------- Event Listeners -----------------------------*/
 randomize.addEventListener('click', function(evt){
@@ -57,9 +59,37 @@ function renderEducation() {
   })
 }
 
+function renderWork() {
+  work.forEach(function(example) {
+    let currentExample = document.createElement('div')
+    currentExample.classList.add('card' , 'text-center')
+    currentExample.style.width = '30rem'
+    currentExample.innerHTML = 
+    `
+    <img src="${example.screenshot}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${example.title}</h5>
+      <p class="card-text">${example.description}</p>
+      <a href="${example.url}" class="btn btn-primary left-btn">See It In Action</a>
+      <a href="${example.github}" class="btn btn-primary right-btn">See The Code</a>
+    </div>
+    `
+    workSection.append(currentExample)
+  })
+}
+console.log(workSection)
 renderLikes()
 renderEducation()
+renderWork()
 
 /*---------------------------------- TODO -----------------------------------*/
 
 // change text color of active nav item
+{/* <div class="card" style="width: 18rem;">
+  <img src="..." class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> */}

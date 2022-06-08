@@ -61,21 +61,22 @@ button {
   
 }
 
-#contact-btn {
+.left-btn {
   background-color: var(--united-nations-blue);
   border-color: var(--united-nations-blue);
 }
 
-#contact-btn:hover {
+.left-btn:hover {
   background-color: var(--dark-cornflower-blue);
 }
 
-#work-btn {
+.right-btn {
   color: var(--united-nations-blue);
   border-color: var(--united-nations-blue);
+  background-color: white;
 }
 
-#work-btn:hover {
+.right-btn:hover {
   background-color: var(--dark-cornflower-blue);
   color: white;
 }
@@ -154,6 +155,11 @@ button {
 #randomize:hover {
   color: var(--dark-cornflower-blue);
   cursor: pointer;
+}
+
+.hint {
+  font-size: .5em;
+  color: var(--dark-cornflower-blue);
 }
 
 .text-box {
@@ -259,4 +265,8 @@ i:hover {
 
 #colgan {
   width: 40px;
+}
+
+#my-work {
+  border-top: 5px solid var(--dark-cornflower-blue);
 }
