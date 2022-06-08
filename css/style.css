@@ -89,7 +89,7 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* align-items: flex-end; */
+  align-items: center;
   flex-wrap: wrap;
   min-height: 60vh;
   max-height: 50px;
@@ -97,8 +97,7 @@ button {
 }
 
 #landing > img {
-  width: 12%;
-  height: 12%;
+  height: 50vh;
 }
 
 .left-column {
@@ -142,7 +141,7 @@ button {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 10vh;
+  /* margin: 10vh; */
 }
 
 #about > img {
@@ -276,7 +275,8 @@ i:hover {
 }
 
 #social > i {
-  color: var(--dark-cornflower-blue)
+  color: var(--dark-cornflower-blue);
+  cursor: pointer;
 }
 
 #contact {
@@ -296,4 +296,8 @@ i:hover {
   flex-direction: column;
   width: 20vw;
   justify-content: space-evenly;
+}
+
+#social > i:hover {
+  color: var(--united-nations-blue);
 }
