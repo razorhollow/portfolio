@@ -270,3 +270,7 @@ i:hover {
 #my-work {
   border-top: 5px solid var(--dark-cornflower-blue);
 }
+
+#social > i {
+  color: var(--dark-cornflower-blue)
+}
