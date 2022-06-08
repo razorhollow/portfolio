@@ -1,19 +1,4 @@
-/* 14 commits, 
 
-yesterday: 3 of 5 sections done, 1 js interactive feature, 
-
-today: finish last 2 sections, add 2 more js features   */
-
-/* SCSS Gradient */
-/* $gradient-top: linear-gradient(0deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-right: linear-gradient(90deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-bottom: linear-gradient(180deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-left: linear-gradient(270deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-top-right: linear-gradient(45deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-bottom-right: linear-gradient(135deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-top-left: linear-gradient(225deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-bottom-left: linear-gradient(315deg, #000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff);
-$gradient-radial: radial-gradient(#000000ff, #19447bff, #214a7eff, #578fd9ff, #ffffffff); */
 
 :root {
   --dark-cornflower-blue: #19447bff;
@@ -307,5 +292,87 @@ i:hover {
 }
 
 @media only screen and (max-width: 1199px)  {
+  button {
+    width: 10vw;
+  }
+
+  .btn-section {
+    width: 30vw;
+  }
   
+  .card-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .card-btns > a {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1199px)  {
+  #badge-container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #badge-container > p {
+    font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 767px)  {
+  h2 {
+    font-size: 2em;
+  }
+  
+  #badge-container > p {
+    font-size: 3.5em;
+  }
+  .btn-section {
+    width: 45vw;
+  }
+  
+  .contact-box {
+    width: 70vw;
+  }
+
+  #contact {
+    display: block;
+    margin: 6vh auto;
+  }
+  #social {
+    width: 70vw;
+    padding-top: 3em;
+    margin-top: 1em;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  #landing {
+    width: 100%;
+    padding: 0;
+  }
+  
+  #landing > img {
+    display: none;
+  }
+
+  #landing > p {
+    width: 90vw;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+ 
+  .container {
+    width: 100vw;
+  }
+
+  #pointing {
+    display: none;
+  }
 }
