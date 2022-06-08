@@ -204,6 +204,7 @@ i:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 4em;
+  
 }
 
 
@@ -269,8 +270,30 @@ i:hover {
 
 #my-work {
   border-top: 5px solid var(--dark-cornflower-blue);
+  border-bottom: 5px solid var(--dark-cornflower-blue);
+  padding: 10vh 0;
+  margin: 10vh auto;
 }
 
 #social > i {
   color: var(--dark-cornflower-blue)
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.contact-box {
+  width: 40vw;
+}
+
+#social {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  justify-content: space-evenly;
 }

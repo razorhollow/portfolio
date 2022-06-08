@@ -70,8 +70,8 @@ function renderWork() {
     <div class="card-body">
       <h5 class="card-title">${example.title}</h5>
       <p class="card-text">${example.description}</p>
-      <a href="${example.url}" class="btn btn-primary left-btn">See It In Action</a>
-      <a href="${example.github}" class="btn btn-primary right-btn">See The Code</a>
+      <a href="${example.url}" class="btn btn-primary left-btn" target="blank">See It In Action</a>
+      <a href="${example.github}" class="btn btn-primary right-btn" target="blank">See The Code</a>
     </div>
     `
     workSection.append(currentExample)
