@@ -20,9 +20,9 @@ The website utilizes a [Fisher-Yates](https://en.wikipedia.org/wiki/Fisher%E2%80
 
 ## Ice Box
 
-- [] Animated hamburger to close box
-- [] Mobile nav bar that slides in from side
-- [] display work section cards in a carousel
+- [ ] Animated hamburger to close box
+- [ ] Mobile nav bar that slides in from side
+- [ ] display work section cards in a carousel
 
 ## Credits
 
