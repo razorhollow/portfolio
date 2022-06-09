@@ -91,6 +91,21 @@ function renderWork() {
     workSection.append(currentExample)
   })
 }
+
+//Fisher-Yates Shuffle
+
+function shuffle(array) {
+  let len = array.length
+  let lastItem, rand;
+  while (len) {
+    rand = Math.floor(Math.random() * len--);
+    lastItem = array[len];
+    array[len] = array[rand];
+    array[rand] = lastItem;
+  }
+  return array;
+}
+
 renderLikes()
 renderEducation()
 renderWork()
