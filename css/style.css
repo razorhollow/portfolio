@@ -177,6 +177,10 @@ button {
   padding: 20px;
 }
 
+#badge-container > p {
+  font-size: 8em;
+}
+
 
 
 i:hover {
