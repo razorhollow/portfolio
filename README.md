@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-![portfolio screenshot](./assets/readmeScreenshot.gif)
+![portfolio screenshot](./assets/screenshot.gif)
 
 
 ## Getting Started
