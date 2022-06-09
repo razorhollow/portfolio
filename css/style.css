@@ -76,9 +76,10 @@ button {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  min-height: 60vh;
+  min-height: 75vh;
   max-height: 50px;
   padding: 5vh;
+  margin-bottom: 1em;
 }
 
 #landing > img {
@@ -372,11 +373,22 @@ i:hover {
 
 @media only screen and (max-width: 398px) {
  
-  .container {
-    width: 100vw;
-  }
-
   #pointing {
     display: none;
   }
+ 
+ #nav-img {
+   display: none;
+  }
+
+  #landing {
+    margin-top: 10px;
+    align-items: flex-start;
+  }
+  .card {
+    width: 70vw;
+  }
 }
+
+
+
