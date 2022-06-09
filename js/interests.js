@@ -3,19 +3,19 @@ const interests = [
     title: 'Tacos',
     icon: '<i class="fa-regular fa-taco fa-4x"></i>'
   }, 
-  {title: "Brazilian Jiujitsu",
+  {title: "BJJ",
   icon: '<i class="fa-regular fa-uniform-martial-arts fa-4x"></i>'
   },
   {
-    title: 'Flying Airplanes',
+    title: 'Flying<br>Airplanes',
     icon: '<i class="fa-regular fa-plane-prop fa-4x"></i>'
   },
   {
-    title: 'Traditional Archery',
+    title: 'Traditional<br>Archery',
     icon: '<i class="fa-regular fa-bow-arrow fa-4x"></i>'
   },
   {
-    title: "Drone Photography",
+    title: "Drone<br>Photography",
     icon: '<i class="fa-regular fa-drone-front fa-4x"></i>'
   },
   {
@@ -23,11 +23,11 @@ const interests = [
     icon: '<i class="fa-regular fa-fishing-rod fa-4x"></i>'
   },
   {
-    title: "Organic Gardening",
+    title: "Organic<br>Gardening",
     icon: '<i class="fa-regular fa-carrot fa-4x"></i>'
   },
   {
-    title: "Wood-Fired Pizza",
+    title: "Wood-Fired<br>Pizza",
     icon: '<i class="fa-regular fa-pizza-slice fa-4x"></i>'
   },
   {

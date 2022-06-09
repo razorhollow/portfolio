@@ -402,10 +402,17 @@ i:hover {
     margin-top: 10px;
     align-items: flex-start;
   }
-  .card {
-    width: 70vw;
+  .card .text-center{
+    width: 15rem;
   }
+
+
+  .card-body{
+    width: 18rem;
+  }
+
 }
+
 
 
 
