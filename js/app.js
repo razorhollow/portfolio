@@ -56,7 +56,7 @@ function renderWork() {
     currentExample.style.width = '30rem'
     currentExample.innerHTML = 
     `
-    <img src="${example.screenshot}" class="card-img-top" alt="...">
+    <img src="${example.screenshot}" class="card-img-top" alt="screenshot image">
     <div class="card-body">
     <h5 class="card-title">${example.title}</h5>
     <p class="card-text">${example.description}</p>
