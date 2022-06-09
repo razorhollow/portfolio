@@ -58,7 +58,7 @@ const educationCards = [
   },
   {
     title: "Keuka College",
-    description: "Organizational Management",
+    description: "BS - Organizational Management",
     dates: "2011 - 2013",
     logo: './assets/keuka.png'
   },
@@ -68,6 +68,12 @@ const educationCards = [
     dates: "2004",
     logo: './assets/atp.jpeg'
   },
+  {
+    title: "SUNY Brockport",
+    description: "Business",
+    dates: "2001 -  2004",
+    logo: "./assets/brockport.png"
+  }
 ]
 
 function getRandomInterest() {
