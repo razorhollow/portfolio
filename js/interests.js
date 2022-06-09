@@ -32,7 +32,7 @@ const interests = [
   },
   {
     title: "Videography",
-    icon: '<i class="fa-regular fa-camera-movie fa-4x"></i>"></i>'
+    icon: '<i class="fa-regular fa-camera-movie fa-4x"></i>'
   },
   {
     title: "Cooking",
@@ -76,8 +76,4 @@ const educationCards = [
   }
 ]
 
-function getRandomInterest() {
-  return interests[Math.floor(Math.random() * interests.length)]
-}
-
-export {getRandomInterest, educationCards}
+export {interests, educationCards}

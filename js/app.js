@@ -1,8 +1,9 @@
 /*-------------------------------- Constants --------------------------------*/
-import {getRandomInterest, educationCards} from "./interests.js"
+import {interests, educationCards} from "./interests.js"
 import {work} from "./work.js"
 /*-------------------------------- Variables --------------------------------*/
-let interests = []
+
+let shuffledInterests = interests
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -16,9 +17,8 @@ let workBtn = document.querySelector('#work-btn')
 /*----------------------------- Event Listeners -----------------------------*/
 randomize.addEventListener('click', function(evt){
   myLikes.innerHTML = ""
-  interests = []
   renderLikes()
-
+  
 })
 
 contactBtn.addEventListener('click', function(){
@@ -29,29 +29,7 @@ workBtn.addEventListener('click', function(){
 })
 /*-------------------------------- Functions --------------------------------*/
 
-function getLikes () {
-  while(interests.length < 3) {
-    let pulledInterest = getRandomInterest()
-    if (! interests.some(interest => interest.title === pulledInterest.title)) {
-      interests.push(pulledInterest)
-    }
-  }
-}
 
-function renderLikes() {
-  getLikes()
-  interests.forEach(function(interest) {
-    let interestCard = document.createElement('div')
-    interestCard.classList.add('w-25')
-    interestCard.innerHTML=
-    `<div class="card">
-      <div class="card-body">
-        ${interest.icon}<p>${interest.title}</p>
-    </div>
-  </div>`
-    myLikes.append(interestCard)
-  })
-}
 
 function renderEducation() {
   educationCards.forEach(function(card) {
@@ -80,12 +58,12 @@ function renderWork() {
     `
     <img src="${example.screenshot}" class="card-img-top" alt="...">
     <div class="card-body">
-      <h5 class="card-title">${example.title}</h5>
-      <p class="card-text">${example.description}</p>
-      <div class='card-btns'>
-        <a href="${example.url}" class="btn btn-primary left-btn" target="blank">See It In Action</a>
-        <a href="${example.github}" class="btn btn-primary right-btn" target="blank">See The Code</a>
-      </div>
+    <h5 class="card-title">${example.title}</h5>
+    <p class="card-text">${example.description}</p>
+    <div class='card-btns'>
+    <a href="${example.url}" class="btn btn-primary left-btn" target="blank">See It In Action</a>
+    <a href="${example.github}" class="btn btn-primary right-btn" target="blank">See The Code</a>
+    </div>
     </div>
     `
     workSection.append(currentExample)
@@ -93,7 +71,6 @@ function renderWork() {
 }
 
 //Fisher-Yates Shuffle
-
 function shuffle(array) {
   let len = array.length
   let lastItem, rand;
@@ -106,6 +83,35 @@ function shuffle(array) {
   return array;
 }
 
+function getLikes () {
+  let display = []
+  while(shuffledInterests.length >= 3) {
+    display = shuffledInterests.splice(0, 3)
+    display.forEach(element => interests.push(element))
+    return display
+  }
+  shuffledInterests = interests
+  shuffle(shuffledInterests)
+  display = shuffledInterests.splice(0, 3)
+  
+  return display
+}
+
+function renderLikes() {
+  let display = getLikes()
+  display.forEach(function(interest) {
+    let interestCard = document.createElement('div')
+    interestCard.classList.add('w-25')
+    interestCard.innerHTML=
+    `<div class="card">
+    <div class="card-body">
+    ${interest.icon}<p>${interest.title}</p>
+    </div>
+    </div>`
+    myLikes.append(interestCard)
+  })
+}
+shuffle(shuffledInterests)
 renderLikes()
 renderEducation()
 renderWork()
