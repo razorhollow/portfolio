@@ -13,6 +13,7 @@ let educationSection = document.querySelector('#education')
 let workSection = document.querySelector('#my-work')
 let contactBtn = document.querySelector('#contact-btn')
 let workBtn = document.querySelector('#work-btn')
+let pointingImage = document.querySelector('#pointing')
 
 /*----------------------------- Event Listeners -----------------------------*/
 randomize.addEventListener('click', function(evt){
@@ -99,6 +100,7 @@ function getLikes () {
 
 function renderLikes() {
   let display = getLikes()
+  picSwitch(display, pointingImage, './assets/tacoJiujitsuBow.gif')
   display.forEach(function(interest) {
     let interestCard = document.createElement('div')
     interestCard.classList.add('w-25')
@@ -115,3 +117,29 @@ shuffle(shuffledInterests)
 renderLikes()
 renderEducation()
 renderWork()
+
+
+function picSwitch(array, img, url){
+  if(array.some(item => item.title ==='Tacos') && array.some(item => item.title === 'BJJ') && array.some(item => item.title === 'Traditional<br>Archery')) {
+  img.src = url
+}
+}
+
+// let testArray = [{
+//   title: 'Tacos',
+//   icon: '<i class="fa-regular fa-taco fa-4x"></i>'
+// }, 
+// {
+//   title: "BJJ",
+// icon: '<i class="fa-regular fa-uniform-martial-arts fa-4x"></i>'
+// },
+// {
+//   title: 'Flying<br>Airplanes',
+//   icon: '<i class="fa-regular fa-plane-prop fa-4x"></i>'
+// },
+// {
+//   title: 'Traditional<br>Archery',
+//   icon: '<i class="fa-regular fa-bow-arrow fa-4x"></i>'
+// }]
+
+// picSwitch(testArray, pointingImage, './assets/tacoJiujitsuBow.gif')
