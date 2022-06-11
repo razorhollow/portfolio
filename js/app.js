@@ -3,7 +3,7 @@ import {interests, educationCards} from "./interests.js"
 import {work} from "./work.js"
 /*-------------------------------- Variables --------------------------------*/
 
-let shuffledInterests = interests
+let shuffledInterests = [...interests]
 
 /*------------------------ Cached Element References ------------------------*/
 
@@ -88,10 +88,9 @@ function getLikes () {
   let display = []
   while(shuffledInterests.length >= 3) {
     display = shuffledInterests.splice(0, 3)
-    display.forEach(element => interests.push(element))
     return display
   }
-  shuffledInterests = interests
+  shuffledInterests = [...interests]
   shuffle(shuffledInterests)
   display = shuffledInterests.splice(0, 3)
   
