@@ -12,6 +12,13 @@ const work = [
   url: "https://rmi-gas-pass.herokuapp.com",
   github: "https://github.com/razorhollow/gas-pass",
   screenshot: "../assets/gas-pass.png"
+  },
+  {
+    title: "Squad Swap",
+    description: "A MERN stack online marketplace utilizing JWTAuth",
+    url: "https://squad-swap.netlify.app/",
+    github: "https://github.com/egger0a6/squad-swap",
+    screenshot: "../assets/squad-swap.png"
   }
 ]
 
